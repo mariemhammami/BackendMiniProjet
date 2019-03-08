@@ -1,0 +1,24 @@
+register:
+  path: /register
+  controller: App\Controller\DefaultController::register
+  methods: [POST]
+  defaults:
+    _format: json
+
+api:
+  path: /api
+  controller: App\Controller\DefaultController::api
+  defaults:
+    _format: json
+
+login_check:
+  path:     /login_check
+  methods:  [POST]
+  defaults:
+    _format: json
+
+user:
+  path: /user
+  controller: App\Controller\DefaultController::user
+  defaults:
+    _format: json
